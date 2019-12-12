@@ -124,7 +124,8 @@ iframe {
 
 /* 記事部分 */
 article {
-    width: 74%;
+    width: 60%;
+    order: 2;
 }
 .post-info {
     position: relative;
@@ -169,6 +170,7 @@ article p {
  /* サイドバー */
 aside {
     width: 22%;
+    order: 3;
 }
 .sub-title {
     font-size: 1.375rem;
@@ -195,6 +197,10 @@ aside p {
     color: #0bd;
 }
 
+/* ad */
+.ad {
+    order: 1;
+}
 /* レスポンシブスタイル - NEWS*/
 @media (max-width: 600px) {
     .news-contents {
