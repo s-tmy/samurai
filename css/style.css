@@ -275,7 +275,7 @@ aside p {
     object-fit: cover;
 }
 
-/* モバイル版 */
+/* モバイル版 - menu */
 
 @media (max-width: 600px) {
     /* Menu */
@@ -288,6 +288,64 @@ aside p {
     }
     .big-box img {
         height: 100%;
+    }
+}
+
+/* CONTACT
+------------------------------- */
+#contact {
+    background-image: url(../images/contact-bg.jpg);
+    min-height: 100vh;
+}
+
+/* form */
+
+form div {
+    margin-bottom: 14px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+   /* width: 100%;  <-- L324+326 ok?? */
+   background: rgba(255, 255, 255, .5);
+   border: 1px #fff solid;
+   border-radius: 5px;
+   padding: 10px;
+   font-size: 1rem;  
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* モバイル版 - oontact */
+
+@media (max-width: 600px) {
+    /* contact */
+    #contact .page-title {
+        margin-top: 40px;
+    }
+    /* form */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%;
     }
 }
 
@@ -304,7 +362,7 @@ footer p {
 }
 
 /* モバイルスタイル */
-@media (max-width:600px){
+@media (max-width:600px) {
     .page-header {
        flex-direction: column;
        align-items: center;
